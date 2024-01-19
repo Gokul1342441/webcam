@@ -1,0 +1,10 @@
+<!-- src/app/primary-camera/primary-camera.component.html -->
+
+<div>
+  <webcam
+    [width]="640"
+    [height]="480"
+    (imageCapture)="handleImage($event)"
+    (initError)="handleError($event)"
+  ></webcam>
+</div>
