@@ -1,4 +1,10 @@
+<!-- src/app/mobile-camera/mobile-camera.component.html -->
+
 <div>
-    <!-- Add mobile camera component content here -->
-    Mobile Camera Content
-  </div>
+  <webcam
+    [width]="640"
+    [height]="480"
+    (imageCapture)="handleImage($event)"
+    (initError)="handleError($event)"
+  ></webcam>
+</div>
